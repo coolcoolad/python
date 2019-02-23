@@ -27,6 +27,7 @@ def stats(oled):
  
  
 def main():
+    time.sleep(10);
     serial = i2c(port=1, address=0x3C)
     oled = sh1106(serial)
     stats(oled)
